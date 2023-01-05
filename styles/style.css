@@ -1,3 +1,8 @@
+@keyframes rotation {
+  from {transform: rotate(0deg);
+  }
+  to {transform: rotate(360deg);}
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,6 +14,12 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+.page__rotation {
+  animation-name: rotation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
 .header {
   display: flex;
   position: relative;
@@ -16,6 +27,7 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -115,6 +127,67 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+}
+
+.techniques {
+  width: 80%;
+  margin: auto;
+}
+.cards {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+  padding-left: 0;
+  max-width: 920px;
+  gap: 0 100px;
+}
+
+.cards__item {
+  width: 240px;
+}
+
+.cards__item:last-child { 
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  margin: 60px 40px 43px;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.video__iframes {
+  display: flex;
+  margin: 50px auto 0;
+  justify-content: center;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+}
+
+.video__iframe:last-child {
+  margin-left: 20px;
 }
 
 .section-title {
