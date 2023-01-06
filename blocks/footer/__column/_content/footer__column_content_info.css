@@ -1,0 +1,5 @@
+.footer__column_content_info {
+  color: #f2f2f2;
+  flex-direction: column;
+  align-content: space-between;
+}

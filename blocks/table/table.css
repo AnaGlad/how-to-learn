@@ -7,35 +7,3 @@
   padding: 0;
   margin: 0 auto 100px;
 }
-
-.table__cell {
-  width: 250px;
-  margin-top: 60px;
-  margin-right: 0;
-}
-
-.table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-.table_theme_dark {
-  margin-bottom: 90px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-top: 80px;
-}
